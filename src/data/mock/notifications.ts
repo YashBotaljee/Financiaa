@@ -1,0 +1,58 @@
+import { NotificationItem } from '../../types';
+
+export const INITIAL_NOTIFICATIONS: NotificationItem[] = [
+  {
+    id: 'notif-1',
+    title: 'Invoice INV-1042 is overdue',
+    description: 'Zomato Kitchens Hub payment of ₹1,22,484 was due on Sep 10, 2026.',
+    category: 'Finance',
+    time: '15 mins ago',
+    read: false,
+    actionRoute: 'invoices',
+  },
+  {
+    id: 'notif-2',
+    title: 'New employee leave request received',
+    description: 'Rohan Mehra requested 2 days Casual Leave starting Sep 28.',
+    category: 'Employees',
+    time: '45 mins ago',
+    read: false,
+    actionRoute: 'leave',
+  },
+  {
+    id: 'notif-3',
+    title: 'Monthly financial report is ready',
+    description: 'Comprehensive August 2026 P&L and Cash Flow analysis generated.',
+    category: 'Finance',
+    time: '2 hours ago',
+    read: false,
+    actionRoute: 'financial-reports',
+  },
+  {
+    id: 'notif-4',
+    title: 'Business insight available',
+    description: 'AI detected a 22% spike in cloud GPU cluster utilization.',
+    category: 'AI Insights',
+    time: '3 hours ago',
+    read: true,
+    actionRoute: 'business-insights',
+  },
+  {
+    id: 'notif-5',
+    title: 'New client contract signed',
+    description: 'Bharat Mobility Corp signed the Telematics Pipeline project agreement.',
+    category: 'Clients',
+    time: 'Yesterday',
+    read: true,
+    actionRoute: 'clients',
+  },
+  {
+    id: 'notif-6',
+    title: 'Cash flow reserve safety confirmed',
+    description: 'Current liquid balance covers 6.2 months of fixed enterprise overheads.',
+    category: 'Business',
+    time: '2 days ago',
+    read: true,
+    actionRoute: 'business-watch',
+  },
+];
